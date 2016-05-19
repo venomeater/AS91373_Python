@@ -1,9 +1,7 @@
 # Name: Netball.py
 # Description: Output the names + avg scores of netball players in alphabetic order. Then suggest the top 3 scorers.
 
-# Imports
-
-# Functions Definitions
+# Functions Definitions --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def hasNumbers(inputString): # Checks if a string has any numbers in it
     return any(char.isdigit() for char in inputString)
 
@@ -76,7 +74,7 @@ def AveragePlayer(player): # Average player in own function as finding the avera
     
     return [_name] + [_average]
 
-# Main
+# Main -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 NumScores = 5 # Variable to allow configuration of program
 MinScore = 0 # Variable to allow configuration of program
@@ -88,6 +86,7 @@ Players = list() # This list will contain all valid players
 print("Instructions: Please enter each individual Netball players First Name and all Goal Scores separated by Spaces\n")
 print("An example input is as follows")
 print("Example: Emma 3 6 17 9 20")
+print("When you are finished, enter Q and press enter")
 
 while True:
     thePlayer = GetPlayer()
@@ -115,3 +114,4 @@ for i in range (3):
 
 # Due to the nature of the program it is likely the program will be used once at a time.
 # Therefore the program simply exits.
+# End --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
