@@ -86,7 +86,7 @@ Players = list() # This list will contain all valid players
 print("Instructions: Please enter each individual Netball players First Name and all Goal Scores separated by Spaces\n")
 print("An example input is as follows")
 print("Example: Emma 3 6 17 9 20")
-print("When you are finished, enter Q and press enter")
+print("When you are finished, type Q and press [Enter]")
 
 while True:
     thePlayer = GetPlayer()
